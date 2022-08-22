@@ -1,0 +1,270 @@
+html {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  height: auto;
+  background: url(../assets/background.png);
+  background-repeat: no-repeat;
+  background-size: cover flex;
+}
+
+/* CONTENEDOR SUPERIOR*/
+
+.contenedorSuperior {
+  margin: 0 auto;
+  width: 950px;
+  height: 130px;
+}
+
+/*IMAGEN LOGO*/
+
+.logoImagen {
+  width: 8%;
+  margin-top: 30px;
+  float: left;
+
+}
+
+/*TITULO*/
+
+.titulo {
+  float: left;
+  margin-top: 15px;
+  font-family: 'Silkscreen', cursive;
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+  padding: 40px;
+  opacity: 95%;
+}
+
+/* CONTENIDO */
+
+.contenedor {
+  margin: 0 auto;
+  margin-top: 8px;
+  margin-bottom: 10px;
+  width: 950px;
+  height: 650px;
+  border-radius: 20px;
+  background-color: #2841719b;
+
+}
+
+textarea::placeholder {
+  font-size: 20px;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.794);
+
+}
+
+.estilo-textoEncriptado {
+  font-family: 'Source Code Pro', monospace;
+  color: white;
+  font-size: 20px;
+  letter-spacing: 5px;
+  background-color: transparent;
+  outline-width: 0px;
+  width: 500px;
+  height: 300px;
+  margin: 30px;
+  margin-top: 25px;
+  resize: none;
+  border: none;
+}
+
+.rectangulo1 {
+  position: absolute;
+  width: 300px;
+  height: 550px;
+  margin-left: 600px;
+  margin-top: 40px;
+  background-color: rgba(6, 36, 76, 0.161);
+  box-shadow: 15px 15px 15px -6px rgba(0, 0, 0, 0.586);
+  border-radius: 32px;
+}
+
+.munieco {
+  display: block;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 45%;
+  opacity: 40%;
+}
+
+
+.estilo-textoDesencriptado {
+  display: block;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-bottom: 10px;
+  width: 240px;
+  height: 200px;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 20px;
+  letter-spacing: 5px;
+  background-color: transparent;
+  outline-width: 0px;
+  resize: none;
+  border: none;
+  color: rgba(255, 255, 255, 0.691);
+
+}
+
+.rectangulo1 h2 {
+  text-align: center;
+  font-size: larger;
+  color: rgb(255, 255, 255);
+  line-height: 20px;
+
+}
+
+.esconder {
+  display: none;
+}
+
+.iconoAlerta {
+  float: left;
+  margin: 3px 0 0 10px;
+}
+
+.aclaracion {
+  margin-bottom: 15px;
+  margin-left: 35px;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 22px;
+  color: rgb(255, 255, 255);
+}
+
+
+.botones {
+  margin: 10px 0px 0px 68px;
+}
+
+.btn-encriptar,
+.btn-desencriptar,
+.btn-copiar {
+  padding: 5px;
+  font-family: 'Silkscreen', cursive;
+  font-size: large;
+  color: rgb(0, 0, 0);
+  background-color: rgba(75, 143, 238, 0.501);
+  border-radius: 32px;
+  box-shadow: 15px 15px 15px -6px rgba(0, 0, 0, 0.586);
+
+}
+
+.btn-encriptar:hover,
+.btn-desencriptar:hover,
+.btn-copiar:hover {
+  color: #000000;
+  background-color: #ffffff97;
+  cursor: pointer;
+
+}
+
+.btn-desencriptar {
+  margin-left: 20px;
+}
+
+.btn-copiar {
+  margin: 16px 0px 0px 100px;
+
+
+}
+
+
+/* FOOTER */
+footer {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+
+}
+
+.footer {
+  color: white;
+  line-height: 20px;
+}
+
+
+.fa-github,
+.fa-linkedin-in {
+  color: white;
+  padding: 8px;
+
+}
+
+.fa-github:hover,
+.fa-linkedin-in:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+
+}
+
+
+/* Animacion Munieco */
+
+.parpadeo {
+
+  animation-name: parpadeo;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+
+  -webkit-animation-name: parpadeo;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+}
+
+@-moz-keyframes parpadeo {
+  0% {
+    opacity: 1.0;
+  }
+
+  50% {
+    opacity: 0.0;
+  }
+
+  100% {
+    opacity: 1.0;
+  }
+}
+
+@-webkit-keyframes parpadeo {
+  0% {
+    opacity: 1.0;
+  }
+
+  50% {
+    opacity: 0.0;
+  }
+
+  100% {
+    opacity: 1.0;
+  }
+}
+
+@keyframes parpadeo {
+  0% {
+    opacity: 1.0;
+  }
+
+  50% {
+    opacity: 0.0;
+  }
+
+  100% {
+    opacity: 1.0;
+  }
+}

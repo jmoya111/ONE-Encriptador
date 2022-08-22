@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge 1 - Encriptador</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./assets/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Silkscreen&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class="contenedorSuperior">
+            <img class="logoImagen" src="./assets/logo_alura.png" alt="logo Alura">
+            <h1 class="titulo">ENCRIPTADOR DE MENSAJES</h1>
+        </div>
+
+    </header>
+
+    <main>
+
+        <section class="contenedor">
+
+            <div class="rectangulo1">
+                <img class="munieco parpadeo" id="munieco" src="./assets/munieco.png" alt="munieco anonimo">
+
+                <div class="textoDesencriptado">
+                    <textarea id="textoDesencriptado" class="estilo-textoDesencriptado" cols="23" rows="10"></textarea>
+                </div>
+
+
+                <div id="rectanguloTexto" class="rectanguloTexto">
+                    <h2>Ningun mensaje <br> ha sido encontrado</h2>
+                </div>
+
+                <button type="button" id="btn-copiar" class="btn-copiar" onclick="copy()">Copiar</button>
+
+            </div>
+
+
+            <div class="textoEncriptado">
+                <textarea class="estilo-textoEncriptado" id="textoEncriptado" cols="50" rows="20"
+                    placeholder="Ingrese el texto aquí..." required autofocus></textarea>
+            </div>
+
+
+            <div class="iconoAlerta"><img src="./assets/alert icon.png" alt="icono alerta"></div>
+
+
+            <div>
+                <p class="aclaracion">Solo letras minúsculas y sin acentos </p>
+            </div>
+
+
+            <div class="botones">
+
+                <button type="button" id="btn-encriptar" class="btn-encriptar" onclick="encriptar()">Encriptar</button>
+
+                <button type="button" id="btn-desencriptar" class="btn-desencriptar"
+                    onclick="desencriptar()">Desencriptar</button>
+
+            </div>
+
+        </section>
+
+    </main>
+    <script src="./js/script.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/js/all.min.js"
+        integrity="sha512-8pHNiqTlsrRjVD4A/3va++W1sMbUHwWxxRPWNyVlql3T+Hgfd81Qc6FC5WMXDC+tSauxxzp1tgiAvSKFu1qIlA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <footer>
+        <div class="footer">
+            <p>© 2022 - Encriptador</p>
+            <p>Desarrollado por: <strong>Moya Jose</strong></p>
+            <a href="https://www.linkedin.com/in/jmoya111/" class="redes" target="_blank">
+                <i class="fa-brands fa-linkedin-in fa-2x"></i></a>
+            <a href="https://github.com/jmoya111" class="redes" target="_blank">
+                <i class="fa-brands fa-github fa-2x"></i>
+            </a>
+        </div>
+    </footer>
+
+</body>
+
+</html>
